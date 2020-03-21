@@ -1,0 +1,21 @@
+int num = Integer.parseInt(request.getParameter("num"));
+	int readcount = Integer.parseInt(request.getParameter("readcount"));
+	String name = request.getParameter("name");
+	String ip = request.getParameter("ip");
+	String passwd = request.getParameter("passwd");
+	String subject = request.getParameter("subject");
+	String content = request.getParameter("content");
+
+ 	GBoardDTO dto = new GBoardDTO();
+ 	
+	dto.setNum(num);
+	dto.setReadcount(readcount);
+	dto.setName(name);
+	dto.setIp(ip);
+	dto.setPasswd(passwd);
+	dto.setSubject(subject);
+	dto.setFile(file);
+	dto.setContent(content);
+
+
+GBoardDAO dao = new GBoardDAO();
